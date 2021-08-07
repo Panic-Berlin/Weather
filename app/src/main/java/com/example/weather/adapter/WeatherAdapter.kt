@@ -38,9 +38,9 @@ class WeatherAdapter(
 
         @SuppressLint("SetTextI18n")
         fun bind(weather: Weather){
-            viewBinding.countryName.text = "Страна: ${weather.Country.LocalizedName}"
-            viewBinding.localizedName.text = "Город: ${weather.LocalizedName}"
-            viewBinding.regionName.text = "Регион: ${weather.AdministrativeArea.LocalizedName}"
+            viewBinding.countryName.text =   "Страна: ${weather.Country.LocalizedName}"
+            viewBinding.localizedName.text = "Город:   ${weather.LocalizedName}"
+            viewBinding.regionName.text =    "Регион: ${weather.AdministrativeArea.LocalizedName}"
         }
     }
 }

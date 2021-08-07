@@ -59,7 +59,7 @@ class TemperatureFragment: Fragment(R.layout.fragment_temperature) {
                 activity?.runOnUiThread {
                     viewBinding.day.text = "Днем: ${temperature.DailyForecasts?.firstOrNull()?.Day?.IconPhrase}"
                     viewBinding.night.text =  "Ночью: ${temperature.DailyForecasts?.firstOrNull()?.Night?.IconPhrase}"
-                    viewBinding.maxMin.text = "${temperature.DailyForecasts?.firstOrNull()?.Temperature?.Minimum?.valueInC}°/${temperature.DailyForecasts?.firstOrNull()?.Temperature?.Maximum?.valueInC}°"
+                    viewBinding.maxMin.text = "${temperature.DailyForecasts?.firstOrNull()?.Temperature?.Maximum?.valueInC}°/${temperature.DailyForecasts?.firstOrNull()?.Temperature?.Minimum?.valueInC}°"
                     viewBinding.tbCity.title = city
                     viewBinding.status.text = temperature.Headline.Text
                     viewBinding.temperature.text = "${temperature.DailyForecasts?.firstOrNull()?.Temperature?.Minimum?.valueInC}°C"
