@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="test">Test</string>
+    <string name="weather">Weather</string>
+    <string name="search">search</string>
+    <string name="top">Топ 50 городов</string>
+</resources>
